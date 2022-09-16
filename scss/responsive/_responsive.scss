@@ -1,6 +1,13 @@
 @use "../utils/index" as *;
 
 
+
+@media (max-width:1400px) {
+    .revolution__img {
+        width: 100%;
+    }
+    
+}
 @media (max-width:1250px) {
     .wrapper {
         max-width: 940px;
@@ -9,7 +16,78 @@
         margin: 0 35px 0 0;
     }
 }
+@media (max-width:1200px) {
+    .hero {
+        padding-bottom: 17.5vw;
+    }
+     header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+        margin: 0 20px 0 0;
+    }
+    .revolution__head{
+        br {
+            display: none;
+        }
+        font-size: 44px;
+    }
+    .revolution__content {
+        margin: 22px 15px 40px 0;
+    }
+    .blocks {
+        max-width: 1044px;
+        padding: 56.1px 85px 60.1px 85px;
+    }
+    .revolution.drone .hero__btns {
+        margin-bottom: 40px;
+    }
+    .revolution__img.drone {
+        width: 70%;
+        margin:  auto;
+    }
+    .revolution.drone {
+        height: auto;
+    }
+    .more-than-a-coin {
+        width: auto;
+        height: auto;
+    }
+    .blocks.bringing .bringing__img {
+        position: absolute;
+        bottom: 0%;
+        left: auto;
+        right: 0%;
+        width: 60%;
+        z-index: 0;
+    }
+    .blocks.bringing {
+        padding: 56.1px 80px 60.1px 65px;
+    }
+    footer .Line-5 {
+        width: calc(100% - 30px);
+    }
+    footer {
+        height: auto;
+    }
+    .footer__tap {
+        padding-bottom: 40px;
+    }
+    
+}
 
+
+
+
+@media (max-width:1043px) {
+    .blocks_cards_layout .blocks_card:nth-child(2n+1) {
+        margin-right: 0;
+    }
+    .blocks_cards_layout {
+        justify-content: space-between !important;
+    }
+    .blocks {
+        max-width: 1044px;
+        padding: 56.1px 75px 60.1px 75px;
+    }
+}
 @media (max-width:991px) {
     header {
         background: transparent;
@@ -100,4 +178,25 @@
         }
 
     }
+    .blocks {
+        height: auto;
+    }
+    .blocks_cards_layout .blocks_card {
+        margin-right: 20px !important;
+    }
+    .blocks_cards_layout {
+        justify-content: center !important;
+    }
+    .people__head {
+        br {
+            display: none;
+        }
+    }
+    .revolution__head {
+        padding-top: 30px;
+    }
+    footer {
+        padding: 70px 0 0;
+    }
+    
 }

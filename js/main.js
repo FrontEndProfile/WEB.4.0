@@ -1,3 +1,1 @@
-$('.hamburger').click(function() {
-    $( this ).toggleClass( "active" );
-});
+      AOS.init();
