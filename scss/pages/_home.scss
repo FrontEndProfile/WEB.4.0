@@ -95,6 +95,11 @@
         box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
         background-color: #fffbfa;
       }
+      img {
+        width: 24px;
+         height: 24px;
+        margin: 0 10px 0 0;
+      }
   }
 
   .blocks_head {
@@ -136,6 +141,15 @@
     color: #e0e0ff;
   }
 
+  .blocks_cards_layout {
+    .blocks_card {
+      &:nth-child(odd) {
+        margin-right: 25px;
+      }
+    }
+    }
+    
+
   .blocks_card {
     width: 205.6px;
     height: 229px;
@@ -144,4 +158,73 @@
     box-shadow: 8px 8px 24px 0 rgba(9, 14, 20, 0.4), -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 14, 20, 0.4);
     background-color: #fffbfa;
     margin: 0 0 25.8px 0;
+
+
+
+    .blocks_card_img {
+        width: 77.4px;
+        height: 77.4px;
+        margin: 0 0 20.4px 0px;
+        padding: 11.6px 11.5px 11.8px 11.9px;
+        border-radius: 48px;
+        background-color: #fff;
+    }
+    .blocks_card_head {
+      margin: 20.4px 0 3.9px;
+      font-family: $Montserrat;
+      font-size: 18px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: -0.36px;
+      color: #111a2a;
+    }
+    .blocks_card_text {
+      margin: 3.9px 0 0;
+      font-family: $Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #111a2a;
+    }
+  }
+
+
+
+  .battle {
+    .people__content {
+      max-width: 731px;
+    }
+  }
+
+
+
+  .hero__btn.battle.blue  {
+      width: 174px;
+      height: 45px;
+      // margin: 55px 16px 51.4px 24px;
+      padding: 10px 13.4px 11px 19px;
+      border-radius: 100px;
+      box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+      background-color: #788bff;
+      
+
+        margin: 4px 0 5px 10.6px;
+        font-family:$FuturaPT-Light;
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 3.12px;
+        color: #fffbfa;
+    svg {
+      width: 24px;
+      height: 24px;
+      margin: 0 10.6px 0 0;
+    }
   }
