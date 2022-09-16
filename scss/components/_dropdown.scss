@@ -1,0 +1,24 @@
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border: none;
+    background-image: url(../images/arrow.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+}
+.dropdown .dropdown-menu {
+    min-width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    .dropdown-item {
+        padding: 9px 15px 9px 15px;
+    }
+}

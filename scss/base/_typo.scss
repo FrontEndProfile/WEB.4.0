@@ -1,0 +1,41 @@
+@use  "../utils/index" as *;
+
+.hero__head {
+    font-family: $FuturaPT-Demi;
+    font-size: 60px;
+    line-height: 1.13;
+    letter-spacing: -2.5px;
+    color: #211a1d;
+}
+.hero__text {
+    font-family: $FuturaPT-Light;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.23px;
+    color: #6b778d;
+}
+.hero__video_head {
+    opacity: 0.5;
+    font-family: $Futura-CondensedMedium ;
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.68;
+    letter-spacing: -0.4px;
+    color: #1d2433;
+}
+.hero__video_content {
+    opacity: 0.3;
+    font-family: $FuturaPT-Demi;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.86px;
+    color: #1d2433;
+}

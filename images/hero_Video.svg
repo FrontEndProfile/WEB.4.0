@@ -1,0 +1,10 @@
+<svg id="Video_Icon" data-name="Video Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6f3ee"/>
+      <stop offset="1" stop-color="#d6d6d6"/>
+    </linearGradient>
+  </defs>
+  <circle id="Oval" cx="28" cy="28" r="28" fill="url(#linear-gradient)"/>
+  <path id="Path_2" data-name="Path 2" d="M0,0V16L10,8Z" transform="translate(25 21)" fill="#848484"/>
+</svg>

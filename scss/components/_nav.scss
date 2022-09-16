@@ -1,0 +1,36 @@
+@use "../utils/index" as *;
+
+
+
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            margin: 0 72px 0 0;
+            opacity: 0.6;
+            font-size: 12px;
+            font-family: $FuturaPT-Demi;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1.71px;
+            color: rgba(32, 26, 28, 0.5);
+        }
+    }
+    .nav-item.dropdown {
+        margin-left: 56px;
+        width: 77px;
+        height: 35px;
+        padding: 10px 10px 9px 6px;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        .nav-link span{
+            font-family: $FuturaPT-Demi;
+        }
+        .dropdown-item span {
+            font-family: $FuturaPT-Demi;
+            color: rgba(32, 26, 28, 0.5);
+        }
+    }
+}

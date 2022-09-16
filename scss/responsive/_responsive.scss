@@ -1,0 +1,103 @@
+@use "../utils/index" as *;
+
+
+@media (max-width:1250px) {
+    .wrapper {
+        max-width: 940px;
+    }
+    .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+        margin: 0 35px 0 0;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        background: transparent;
+        svg {
+            background: transparent;
+            filter: drop-shadow(0px 35px 18px #bebebe95);
+        }
+    }
+    header .navbar.bottom {
+        background: transparent;
+        padding-top: 0;
+        .container-fluid.wrapper {
+            background-color: #fffbfa;
+        }
+        .wrapper {
+            max-width: 100%;
+            padding: 0;
+        }
+        .navbar-brand {
+            padding: 19px 30px;
+            display: inline-block;
+            box-sizing: content-box;
+
+            margin: 0;
+        }
+        .navbar-toggler {
+            margin: 19px 30px;
+        }
+        .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+            margin: 0;
+        }
+        .navbar-nav {
+            justify-content: center;
+        }
+        .navbar-collapse {
+           .nav-item {
+            width: 100%;
+            text-align: center;
+            border-bottom: solid 1px rgba(151, 151, 151, 0.19);
+           } 
+           .nav-item.mobo_none {
+            display: none;
+           } 
+           .nav-item.get {
+            display: none;
+           }
+           .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+            font-size: 18px;
+            color: rgba(17, 26, 42, 0.8);
+            }
+        }
+        .collapse.navbar-collapse {
+            position: relative;
+            z-index: 2;
+        }
+        .sub_menu {
+            display: flex; align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: 2px solid #000;
+            width: calc(100% - 41px);
+            margin: auto;
+            margin-top: 42px;
+            margin-bottom: 8px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            .nav-item {
+                width: 33%;
+            }
+            .nav-link {
+                font-family: $FuturaPT-Demi;
+                font-size: 15px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.2;
+                letter-spacing: -0.62px;
+                text-align: start;
+                color: #111a2a;
+            }
+        }
+        .waw {
+            position: absolute;
+            top: 90%;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+    }
+}

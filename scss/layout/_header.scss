@@ -1,0 +1,63 @@
+@use "../components/index" as *;
+
+header {
+    .navbar.top {
+        width: 100%;
+        height: 46px;
+        margin: 0;
+        padding: 5px 0;
+        background-color: #fffbfa;
+        position: relative;
+        z-index: 2;
+        @extend .navbar-nav;
+        .dropdown-toggle-flag {
+            width: 17px;
+            margin-right: 4px;
+        }
+    }
+
+    
+    .navbar.bottom {
+        background: white;
+        @extend .navbar-nav;
+        .navbar-nav .nav-link {
+            opacity: 1;
+        }
+        .nav-item.get {
+            width: 190px;
+            height: 45px;
+            // margin: 0 0 95px 53px;
+            margin-left: 53px;
+            padding: 13.4px 24.4px 12.2px 26.4px;
+            border-radius: 100px;
+            box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+            background-color: #fff;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+
+            .nav-link {
+                margin: 0;
+                padding: 0;
+                .nav-link-img {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: none;
+                width: 38px;
+            }
+        }
+    }
+    .sub_menu { 
+        display: none;
+    }
+}

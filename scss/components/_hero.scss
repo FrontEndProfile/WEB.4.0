@@ -1,0 +1,53 @@
+@use "../utils/index" as *;
+// ============================ HERO ================================
+.hero {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    @include flex-center;
+    align-items: flex-start;
+
+    padding-top: 90px;
+    padding-bottom: 11.5vw;
+
+
+    &_cut {
+        background: #ffffff;
+        height: 70px;
+        width: 120%;
+        position: absolute;
+        bottom: 70px;
+        filter: drop-shadow(0px 25px 10px rgba(182, 224, 241, 0.203));
+        rotate: -3deg;
+        translate: -5%;
+        z-index: 0;
+    }
+    .hero__divider {
+        width: 373px;
+
+        height: 1px;
+      
+        margin: 48px 0 28px 3px;
+      
+        border-style: solid;
+      
+        border-width: 1px;
+      
+        border-image-source: linear-gradient(to bottom, #f6f3ee, #d6d6d6);
+      
+        border-image-slice: 1;
+    }
+    .hero__img {
+        width: 460px;
+        margin-top: -20px;
+    }
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    .hero__text {
+        margin-bottom: 30px;
+    }
+}

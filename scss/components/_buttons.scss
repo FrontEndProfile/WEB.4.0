@@ -1,0 +1,60 @@
+@use "../utils/index" as *;
+
+.ui_btn {
+  box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+  background-color: #fffbfa;
+  border-radius: 100px;
+  @include flex-center;
+
+  a {
+    font-size: 11px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.82px;
+    color: #43484d;
+    text-align: center;
+    margin: 0 !important;
+  }
+}
+
+.hero__btn {
+  width: 174px;
+  height: 45px;
+  border-radius: 100px;
+  box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.1);
+  @include flex-center;
+  span img {
+        width: 20px;
+        height: 15px;
+        margin: 0 16px 1px 0;
+  }
+  font-family: $FuturaPT-Light;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.12px;
+  color: #fffbfa;
+}
+
+.hero__btn.theme {
+        background-image: linear-gradient(to bottom, #b0bfff, #788bff);
+        color: #fffbfa;
+        &:hover {
+                color: #fffbfa;     
+                 
+        }
+}
+.hero__btn {
+        color: #788bff;
+        &:hover {
+                color: #788bff;   
+        }
+}
+
+.hero__video_btn {
+    width: 56px;
+}

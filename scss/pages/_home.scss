@@ -1,0 +1,147 @@
+@use  "../utils/index" as *;
+
+.hero__video {
+    .hero__video_btn {
+        margin-right: 22px;
+    }
+}
+
+
+
+.people__head {
+    margin: 0 0 23px;
+    font-family: $FuturaPT-ExtraBold;
+    font-size: 54px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: -2.25px;
+    text-align: center;
+    color: #111a2a;
+  }
+
+  .people__content{
+    max-width: 731px;
+        margin: 23px auto 30px auto;
+        font-family: $FuturaPT-Light ;
+        font-size: 21px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: -0.26px;
+        text-align: center;
+        color: #6b778d;
+  }
+  .Line-3 {
+    width: 856px;
+    height: 1px;
+    margin: 73px 438px 55.3px;
+    border: solid 1px rgba(151, 151, 151, 0.26);
+  }
+
+
+
+  .revolution__head {
+    margin: 0 0 22px;
+    font-family: $FuturaPT-Light;
+    font-size: 48px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: -2px;
+    color: #201a1c;
+  }  
+
+  .revolution__content {
+    max-width: 455px;
+    margin: 22px 15px 61px 0;
+    font-family: $FuturaPT-Light;
+    font-size: 21px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -0.26px;
+    color: #6b778d;
+  }
+  .revolution__img {
+    width: 600px;
+    img {
+        margin-top: -90px;
+    }
+  }
+
+
+
+  .blocks {
+    max-width: 1161.3px;
+    height: 600px;
+    padding: 56.1px 133.1px 60.1px 123px;
+    border-radius: 75px;
+    background-color: #788bff;
+  }
+
+
+  .blocks_btn {
+    .hero__btn {
+        width: 277px;
+        height: 45px;
+        margin: 33.4px 192.7px 71.9px 0;
+        padding: 10px 24px 11px 20px;
+        border-radius: 100px;
+        box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+        background-color: #fffbfa;
+      }
+  }
+
+  .blocks_head {
+    font-family: $FuturaPT-Demi;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #fff;
+    padding: 13.3px 0 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .blocks_small {
+    width: 274px;
+    height: 27px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: 1px;
+    color: #fffbfa;
+    margin-bottom: 7.7px;
+  }
+
+  .blocks_text {
+    margin: 5.1px 100.8px 33.4px 0px;
+    font-family: $FuturaPT-Light;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #e0e0ff;
+  }
+
+  .blocks_card {
+    width: 205.6px;
+    height: 229px;
+    padding: 19.4px 19.4px 27.4px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 24px 0 rgba(9, 14, 20, 0.4), -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 14, 20, 0.4);
+    background-color: #fffbfa;
+    margin: 0 0 25.8px 0;
+  }
