@@ -40,8 +40,9 @@ header {
             z-index: 1;
 
             .nav-link {
-                margin: 0;
-                padding: 0;
+                // margin: 0;
+                // padding: 0;
+                
                 .nav-link-img {
                     margin-right: 10px;
                 }
@@ -62,5 +63,21 @@ header {
     }
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         z-index: 99;
+    }
+}
+
+
+.showMenu{
+    header{
+        background: url(../images/bgMenu.png);
+        background-size: cover;
+        background-position: bottom center;
+        padding-bottom: 60px;
+        filter: drop-shadow(0px 2px 34px rgba(0, 0, 0, 0.5));
+        
+    }
+    
+    header .navbar.bottom {
+        background: #fff;
     }
 }

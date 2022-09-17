@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5.5" height="9.5" viewBox="0 0 5.5 9.5">
+  <g id="arrowRight" transform="translate(-0.75 -0.25)">
+    <path id="Path" d="M.22.22A.75.75,0,0,1,1.28.22l4,4a.75.75,0,0,1,0,1.061l-4,4A.75.75,0,0,1,.22,8.22l3.47-3.47L.22,1.28A.75.75,0,0,1,.22.22Z" transform="translate(0.75 0.25)"/>
+  </g>
+</svg>
