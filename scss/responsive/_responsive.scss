@@ -29,6 +29,9 @@
         bottom: 80%;
         max-width: 362px;
     }
+    .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+        margin: 0 30px 0 0;
+    }
 }
 
 @media (max-width:1250px) {
@@ -39,7 +42,7 @@
     .navbar-nav .nav-item .nav-link,
     header .navbar.top .nav-item .nav-link,
     header .navbar.bottom .nav-item .nav-link {
-        margin: 0 35px 0 0;
+        margin: 0 30px 0 0;
     }
 
 }
@@ -51,7 +54,7 @@
 
     header .navbar.top .nav-item .nav-link,
     header .navbar.bottom .nav-item .nav-link {
-        margin: 0 20px 0 0;
+        margin: 0 0px 0 0;
     }
 
     .revolution__head {
@@ -165,6 +168,18 @@
         left: 0;
         top: 50px;
     }
+    .navbar.bottom .dropdown-toggle.nav-link.web {
+        width: 165px;
+    }
+    .navbar.bottom .dropdown-toggle.nav-link.bulid {
+        width: 100px;
+    }
+    .navbar.bottom .dropdown-toggle.nav-link.ecosystem {
+        width: 130px;
+    }
+    .navbar.bottom .dropdown-toggle.nav-link.dao {
+        width: 75px;
+    }
 }
 
 
@@ -253,6 +268,34 @@
             header .navbar.bottom .nav-item .nav-link {
                 font-size: 18px;
                 color: rgba(17, 26, 42, 0.8);
+            }
+            .dropdown.mega {
+                z-index: 3;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: fit-content;
+                flex-wrap: wrap;
+            translate: 0% !important;
+            .dropdown-menu {
+                width: 90% !important;
+                height: fit-content;
+                padding: 48px 0 0 31px;
+                border-radius: 23px;
+                translate: -50%;
+                .d-flex {
+                    flex-wrap: wrap;
+                }
+            }
+             .dropdown-menu {
+                position: absolute;
+                z-index: 999;
+                top: 0;
+            }
+
+            }
+            .dropdown-toggle.nav-link.web + .dropdown-menu {
+                translate: 0%;
             }
         }
 

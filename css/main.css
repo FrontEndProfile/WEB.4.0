@@ -13007,6 +13007,9 @@ footer .copyright__link li a span {
     bottom: 80%;
     max-width: 362px;
   }
+  .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
+    margin: 0 30px 0 0;
+  }
 }
 @media (max-width: 1250px) {
   .wrapper {
@@ -13015,7 +13018,7 @@ footer .copyright__link li a span {
   .navbar-nav .nav-item .nav-link,
 header .navbar.top .nav-item .nav-link,
 header .navbar.bottom .nav-item .nav-link {
-    margin: 0 35px 0 0;
+    margin: 0 30px 0 0;
   }
 }
 @media (max-width: 1199px) {
@@ -13024,7 +13027,7 @@ header .navbar.bottom .nav-item .nav-link {
   }
   header .navbar.top .nav-item .nav-link,
 header .navbar.bottom .nav-item .nav-link {
-    margin: 0 20px 0 0;
+    margin: 0 0px 0 0;
   }
   .revolution__head {
     font-size: 44px;
@@ -13114,6 +13117,18 @@ header .navbar.bottom .nav-item .nav-link {
     left: 0;
     top: 50px;
   }
+  .navbar.bottom .dropdown-toggle.nav-link.web {
+    width: 165px;
+  }
+  .navbar.bottom .dropdown-toggle.nav-link.bulid {
+    width: 100px;
+  }
+  .navbar.bottom .dropdown-toggle.nav-link.ecosystem {
+    width: 130px;
+  }
+  .navbar.bottom .dropdown-toggle.nav-link.dao {
+    width: 75px;
+  }
 }
 @media (max-width: 1043px) {
   .blocks_cards_layout .blocks_card:nth-child(2n+1) {
@@ -13182,6 +13197,37 @@ header .navbar.bottom .navbar-collapse header .navbar.top .nav-item .nav-link,
 header .navbar.bottom .navbar-collapse header .navbar.bottom .nav-item .nav-link {
     font-size: 18px;
     color: rgba(17, 26, 42, 0.8);
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    translate: 0% !important;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu {
+    width: 90% !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 48px 0 0 31px;
+    border-radius: 23px;
+    translate: -50%;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .d-flex {
+    flex-wrap: wrap;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.web + .dropdown-menu {
+    translate: 0%;
   }
   header .navbar.bottom .collapse.navbar-collapse {
     position: relative;
