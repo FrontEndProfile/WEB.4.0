@@ -32,6 +32,18 @@
     .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
         margin: 0 30px 0 0;
     }
+    .planet .col {
+        padding-left: 250px;
+    }
+    .planet .col .planetImg {
+        position: absolute;
+        left: 10px;
+        top: 0;
+    }
+    .people.planet {
+        margin-bottom: 75px;
+
+    }
 }
 
 @media (max-width:1250px) {
@@ -180,6 +192,15 @@
     .navbar.bottom .dropdown-toggle.nav-link.dao {
         width: 75px;
     }
+    .blocks.bringing .bringing__img {
+        max-width: 55%;
+        position: absolute;
+        bottom: 0;
+        right: 1%;
+    }
+    .blocks.bringing {
+        width: 100%;
+    }
 }
 
 
@@ -324,7 +345,7 @@
                     font-size: 18px;
                     line-height: 1;
                     letter-spacing: -0.92px;
-                    height: 35px !important;
+                    height: 35px;
                 }
                 .Explore-BitWebs-arc {
                     font-size: 13px;
@@ -531,6 +552,10 @@
         left: 0;
         right: 0;
         z-index: 999;
+    }
+    header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Learn-About-BitWebs
+ {
+        height: 53px !important;
     }
 }
 
@@ -927,7 +952,11 @@
         font-size: 41px;
     }
     .hero__btns a{
-        height: 56px;
+        height: 56px !important;
+        justify-content: center;
+        
+
+        
     }
 
 }

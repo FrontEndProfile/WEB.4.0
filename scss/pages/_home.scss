@@ -123,7 +123,7 @@
   .hero__btn {
     width: 277px;
     height: 45px;
-    margin: 33.4px 192.7px 71.9px 0;
+    margin: 33.4px 0 71.9px 0;
     padding: 10px 24px 11px 20px;
     border-radius: 100px;
     box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
@@ -134,6 +134,12 @@
     width: 24px;
     height: 24px;
     margin: 0 10px 0 0;
+  }
+}
+.icon__dark {
+  fill: black;
+  svg {
+    fill: black !important;
   }
 }
 
@@ -348,14 +354,18 @@
   overflow: hidden;
   box-shadow: -11px 2px 91px 0 rgba(17, 26, 42, 0.06);
   background-color: #111a2a;
-  padding: 56.1px 120px 0 0;
+  // padding: 91px 120px 0 0;  
+  padding: 91px 75.3px 0 0px;
+  width: 1161.3px;
+  height: 600px;
+  margin-top: 50px;
 
   p {
     color: #fffbfa;
   }
 
   .bringing__img {
-    max-width: 100%;
+    max-width: 123%;
   }
 
   .hero__btn.bringing {
@@ -368,12 +378,14 @@
     background-color: #fffbfa;
   }
 }
-
+.existence {
+  margin-bottom: 30px;
+}
 
 footer {
   height: 1155px;
   background: transparent;
-  background-image: url(../../images/footer_back.png);
+  background-image: url(../../images/footer_back.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -502,8 +514,9 @@ footer {
 
 .rocketIMg {
   position: absolute;
-  right: -94px;
+  right: -128px;
   bottom: 80%;
+  width: 460px;
 }
 
 .people {
@@ -529,7 +542,7 @@ footer {
       .coinImg {
         position: absolute;
         left: -107px;
-        top: 232px;
+        top: 250px;
       }
     }
   }
@@ -539,7 +552,7 @@ footer {
 .planet{
   overflow: inherit;
   .col{
-    padding-left: 354px;
+    padding-left: 180px;
     position: relative;
     .planetImg {
       position: absolute;
@@ -549,7 +562,12 @@ footer {
   }
 }
 
-
+.people.relative .contentBox .coinImg {
+	position: absolute;
+	// left: -35px;
+	// top: 232px;
+	max-width: 199px;
+}
 
 .dropdown.mega {
 	z-index: 3;
@@ -584,7 +602,7 @@ footer {
     translate: -50%;
     border: none;
 
-    background-image: url(../../images/Shape_04.svg);
+    background-image: url(../images/Shape_04.webp);
     background-size: 50%;
     background-position: right bottom;
     background-repeat: no-repeat;

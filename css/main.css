@@ -12107,6 +12107,48 @@ a {
   width: 56px;
 }
 
+.hero__btn.base {
+  display: flex;
+  align-items: center;
+}
+.hero__btn.base svg {
+  width: 24px;
+  margin-right: 11px;
+  fill: white;
+}
+
+.primary {
+  width: 174px;
+  height: 45px;
+  box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+  background-color: #788bff;
+  color: white;
+}
+.primary:hover {
+  color: white;
+}
+
+.light {
+  width: 224px;
+  height: 45px;
+  box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+  background-color: #fffbfa;
+  color: #788bff;
+}
+.light svg {
+  fill: black !important;
+}
+
+.base.webchip {
+  width: 236px;
+  box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+  background-color: #fffbfa;
+}
+
+.bitweb {
+  color: #111a2a;
+}
+
 .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -12480,7 +12522,7 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
 .blocks_btn .hero__btn {
   width: 277px;
   height: 45px;
-  margin: 33.4px 192.7px 71.9px 0;
+  margin: 33.4px 0 71.9px 0;
   padding: 10px 24px 11px 20px;
   border-radius: 100px;
   box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
@@ -12490,6 +12532,13 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
   width: 24px;
   height: 24px;
   margin: 0 10px 0 0;
+}
+
+.icon__dark {
+  fill: black;
+}
+.icon__dark svg {
+  fill: black !important;
 }
 
 .blocks_head {
@@ -12678,13 +12727,16 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
   overflow: hidden;
   box-shadow: -11px 2px 91px 0 rgba(17, 26, 42, 0.06);
   background-color: #111a2a;
-  padding: 56.1px 120px 0 0;
+  padding: 91px 75.3px 0 0px;
+  width: 1161.3px;
+  height: 600px;
+  margin-top: 50px;
 }
 .blocks.bringing p {
   color: #fffbfa;
 }
 .blocks.bringing .bringing__img {
-  max-width: 100%;
+  max-width: 123%;
 }
 .blocks.bringing .hero__btn.bringing {
   width: -webkit-fit-content;
@@ -12697,10 +12749,14 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
   background-color: #fffbfa;
 }
 
+.existence {
+  margin-bottom: 30px;
+}
+
 footer {
   height: 1155px;
   background: transparent;
-  background-image: url(../../images/footer_back.png);
+  background-image: url(../../images/footer_back.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -12809,8 +12865,9 @@ footer .copyright__link li a span {
 
 .rocketIMg {
   position: absolute;
-  right: -94px;
+  right: -128px;
   bottom: 80%;
+  width: 460px;
 }
 
 .people {
@@ -12832,20 +12889,25 @@ footer .copyright__link li a span {
 .people.relative .contentBox .coinImg {
   position: absolute;
   left: -107px;
-  top: 232px;
+  top: 250px;
 }
 
 .planet {
   overflow: inherit;
 }
 .planet .col {
-  padding-left: 354px;
+  padding-left: 180px;
   position: relative;
 }
 .planet .col .planetImg {
   position: absolute;
   left: 57px;
   top: 0;
+}
+
+.people.relative .contentBox .coinImg {
+  position: absolute;
+  max-width: 199px;
 }
 
 .dropdown.mega {
@@ -12878,7 +12940,7 @@ footer .copyright__link li a span {
   background-color: #fffbfa;
   translate: -50%;
   border: none;
-  background-image: url(../../images/Shape_04.svg);
+  background-image: url(../images/Shape_04.webp);
   background-size: 50%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -13025,6 +13087,17 @@ footer .copyright__link li a span {
   .navbar-nav .nav-item .nav-link, header .navbar.top .nav-item .nav-link, header .navbar.bottom .nav-item .nav-link {
     margin: 0 30px 0 0;
   }
+  .planet .col {
+    padding-left: 250px;
+  }
+  .planet .col .planetImg {
+    position: absolute;
+    left: 10px;
+    top: 0;
+  }
+  .people.planet {
+    margin-bottom: 75px;
+  }
 }
 @media (max-width: 1250px) {
   .wrapper {
@@ -13143,6 +13216,15 @@ header .navbar.bottom .nav-item .nav-link {
   }
   .navbar.bottom .dropdown-toggle.nav-link.dao {
     width: 75px;
+  }
+  .blocks.bringing .bringing__img {
+    max-width: 55%;
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+  }
+  .blocks.bringing {
+    width: 100%;
   }
 }
 @media (max-width: 1043px) {
@@ -13272,7 +13354,7 @@ header .navbar.bottom .navbar-collapse header .navbar.bottom .nav-item .nav-link
     font-size: 18px;
     line-height: 1;
     letter-spacing: -0.92px;
-    height: 35px !important;
+    height: 35px;
   }
   header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Explore-BitWebs-arc {
     font-size: 13px;
@@ -13439,6 +13521,9 @@ header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.bulid + .dropdo
     left: 0;
     right: 0;
     z-index: 999;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Learn-About-BitWebs {
+    height: 53px !important;
   }
 }
 @media (max-width: 767px) {
@@ -13758,6 +13843,7 @@ footer .copyright__link li a {
     font-size: 41px;
   }
   .hero__btns a {
-    height: 56px;
+    height: 56px !important;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -58,3 +58,42 @@
 .hero__video_btn {
     width: 56px;
 }
+
+.hero__btn.base {
+        display: flex;
+        align-items: center;
+        svg {
+                width: 24px;
+                margin-right: 11px;     
+                fill: white;
+        }
+}
+
+.primary {
+        width: 174px;
+        height: 45px;
+        box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+        background-color: #788bff;
+        color: white;
+        &:hover {
+        color: white;
+        }
+}
+.light {
+                width: 224px;
+                height: 45px;
+                box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+                background-color: #fffbfa;
+                color: #788bff;
+                svg {
+                        fill: black !important;
+                }
+}
+.base.webchip {
+                width: 236px;
+                box-shadow: 0 28px 43px 0 rgba(0, 0, 0, 0.11);
+                background-color: #fffbfa;
+}
+.bitweb {
+        color: #111a2a  ;
+}
