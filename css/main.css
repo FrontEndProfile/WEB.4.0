@@ -12461,7 +12461,6 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
 
 .Line-3 {
   width: 856px;
-  height: 1px;
   margin: 73px 438px 55.3px;
   border: solid 1px rgba(151, 151, 151, 0.26);
 }
@@ -12778,7 +12777,6 @@ footer .its-a-bit-of-a-revo {
 }
 footer .Line-4 {
   width: 202px;
-  height: 1px;
   margin: 21px 60px 0px 0px;
   border: solid 1px rgba(151, 151, 151, 0.35);
 }
@@ -12799,7 +12797,6 @@ footer .The-Multichain {
 }
 footer .Line-5 {
   width: calc(100% - 0px);
-  height: 1px;
   margin: 2px 50px 12px 0px;
   border: solid 1px #979797;
 }
