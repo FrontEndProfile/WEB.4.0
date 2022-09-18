@@ -12375,6 +12375,17 @@ header .navbar-expand-lg .navbar-nav .dropdown-menu, header .navbar-expand-lg .n
   margin-right: 22px;
 }
 
+.hero {
+  position: relative;
+}
+.hero .hero__element {
+  width: 390px;
+  position: absolute;
+  left: 52.9%;
+  translate: -50%;
+  top: 30px;
+}
+
 .people__head {
   margin: 0 0 23px;
   font-family: "FuturaPT-ExtraBold";
@@ -13147,15 +13158,23 @@ header .navbar.bottom .nav-item .nav-link {
     margin: 0 auto;
   }
   header {
-    background: transparent;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   header svg {
     background: transparent;
     filter: drop-shadow(0px 35px 18px rgba(190, 190, 190, 0.5843137255));
   }
+  .hero {
+    margin-top: 86px;
+  }
   header .navbar.bottom {
     background: transparent;
     padding-top: 0;
+    padding-bottom: 0;
+  }
+  header .navbar.bottom > .container-lg {
+    padding: 0;
   }
   header .navbar.bottom .container-fluid.wrapper {
     background-color: #fffbfa;
@@ -13165,13 +13184,13 @@ header .navbar.bottom .nav-item .nav-link {
     padding: 0;
   }
   header .navbar.bottom .navbar-brand {
-    padding: 19px 30px;
+    padding: 19px 30px !important;
     display: inline-block;
     box-sizing: content-box;
     margin: 0;
   }
   header .navbar.bottom .navbar-toggler {
-    margin: 19px 30px;
+    margin: 19px 30px !important;
   }
   header .navbar.bottom .navbar-nav .nav-item .nav-link,
 header .navbar.bottom header .navbar.top .nav-item .nav-link,
@@ -13198,6 +13217,11 @@ header .navbar.bottom .navbar-collapse header .navbar.bottom .nav-item .nav-link
     font-size: 18px;
     color: rgba(17, 26, 42, 0.8);
   }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-toggle.nav-link.show {
+    background-color: transparent;
+    color: #8bd7d2;
+    box-shadow: none;
+  }
   header .navbar.bottom .navbar-collapse .dropdown.mega {
     z-index: 3;
     display: flex;
@@ -13222,16 +13246,55 @@ header .navbar.bottom .navbar-collapse header .navbar.bottom .nav-item .nav-link
     flex-wrap: wrap;
   }
   header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu {
-    position: absolute;
-    z-index: 999;
-    top: 0;
+    width: 90% !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 16px 0 0 20px;
+    border-radius: 13px;
   }
-  header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.web + .dropdown-menu {
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Rectangle {
+    width: 220px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 11px 10px 0;
+    padding: 9px 7px 9px 15px;
+    border-radius: 8px;
+    box-shadow: 5px 7px 2px 4px rgba(230, 230, 232, 0.17);
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Learn-About-BitWebs {
+    width: 175px;
+    margin: 0px 21px 0px 0;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.92px;
+    height: 35px !important;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Explore-BitWebs-arc {
+    font-size: 13px;
+    width: 175px;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown.mega .dropdown-menu .Developer-Docs-Telem {
+    width: 203px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 0 0px 18px;
+    font-size: 22px;
+    letter-spacing: -0.92px;
+  }
+  header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.web + .dropdown-menu,
+header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.ecosystem + .dropdown-menu,
+header .navbar.bottom .navbar-collapse .dropdown-toggle.nav-link.bulid + .dropdown-menu {
     translate: 0%;
   }
   header .navbar.bottom .collapse.navbar-collapse {
     position: relative;
     z-index: 2;
+    height: 70vh;
+    overflow: scroll;
+    background-color: #fffbfa;
   }
   header .navbar.bottom .sub_menu {
     display: flex;
@@ -13394,9 +13457,11 @@ header .navbar.bottom .navbar-collapse header .navbar.bottom .nav-item .nav-link
   }
   .hero__img {
     position: relative;
-    left: -106px;
     max-width: 100%;
     margin: 0 auto;
+  }
+  .hero__element {
+    width: 300px;
   }
   .hero__head {
     margin: 23px 0 20px;
@@ -13677,11 +13742,15 @@ footer .copyright__link li a {
   .revolution__head {
     font-family: "FuturaPT-ExtraBold";
   }
+  .dropdown-menu .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 427px) {
-  .hero .hero__img {
-    width: 100%;
-    left: -75px;
+  .hero__element {
+    width: 250px !important;
+    left: 18% !important;
   }
   .hero__head {
     font-size: 41px;

@@ -205,7 +205,8 @@
         margin: 0 auto;
     }
     header {
-        background: transparent;
+        background: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         svg {
             background: transparent;
@@ -213,9 +214,18 @@
         }
     }
 
+    .hero {
+        margin-top: 86px;
+    }
+
     header .navbar.bottom {
         background: transparent;
         padding-top: 0;
+        padding-bottom: 0;
+        >.container-lg {
+            padding: 0;
+            
+        }
 
         .container-fluid.wrapper {
             background-color: #fffbfa;
@@ -227,7 +237,7 @@
         }
 
         .navbar-brand {
-            padding: 19px 30px;
+            padding: 19px 30px !important;
             display: inline-block;
             box-sizing: content-box;
 
@@ -235,7 +245,7 @@
         }
 
         .navbar-toggler {
-            margin: 19px 30px;
+            margin: 19px 30px !important;
         }
 
         .navbar-nav .nav-item .nav-link,
@@ -269,6 +279,11 @@
                 font-size: 18px;
                 color: rgba(17, 26, 42, 0.8);
             }
+            .dropdown.mega .dropdown-toggle.nav-link.show {
+                background-color: transparent;
+                color: #8bd7d2;
+                box-shadow: none;
+            }
             .dropdown.mega {
                 z-index: 3;
                 display: flex;
@@ -288,20 +303,57 @@
                 }
             }
              .dropdown-menu {
-                position: absolute;
-                z-index: 999;
-                top: 0;
+                // position: absolute;
+                // z-index: 999;
+                // top: 0;
+                width: 90% !important;
+                height: fit-content;
+                padding: 16px 0 0 20px;
+                border-radius: 13px;
+                .Rectangle {
+                    width: 220px;
+                    height: fit-content;
+                    margin: 0 11px 10px 0;
+                    padding: 9px 7px 9px 15px;
+                    border-radius: 8px;
+                    box-shadow: 5px 7px 2px 4px rgba(230, 230, 232, 0.17);
+                }
+                .Learn-About-BitWebs {
+                    width: 175px;
+                    margin: 0px 21px 0px 0;
+                    font-size: 18px;
+                    line-height: 1;
+                    letter-spacing: -0.92px;
+                    height: 35px !important;
+                }
+                .Explore-BitWebs-arc {
+                    font-size: 13px;
+                    width: 175px;
+                }
+                .Developer-Docs-Telem {
+                    width: 203px;
+                    height: fit-content;
+                    margin: 0 0 0px 18px;
+                    font-size: 22px;
+                    letter-spacing: -0.92px;
+                }
             }
 
             }
-            .dropdown-toggle.nav-link.web + .dropdown-menu {
+            .dropdown-toggle.nav-link.web + .dropdown-menu ,
+            .dropdown-toggle.nav-link.ecosystem  + .dropdown-menu ,
+            .dropdown-toggle.nav-link.bulid  + .dropdown-menu {
                 translate: 0%;
             }
+            
         }
 
         .collapse.navbar-collapse {
             position: relative;
             z-index: 2;
+            height: 70vh;
+            overflow: scroll;
+            background-color: #fffbfa;
         }
 
         .sub_menu {
@@ -504,9 +556,12 @@
 
     .hero__img {
         position: relative;
-        left: -106px;
+        // left: -106px;
         max-width: 100%;
         margin: 0 auto;
+    }
+    .hero__element {
+        width: 300px;
     }
 
     .hero__head {
@@ -854,12 +909,19 @@
 .revolution__head {
     font-family: $FuturaPT-ExtraBold;
 }
+
+.dropdown-menu {
+    .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 }
 
 @media(max-width:427px){
-    .hero .hero__img{
-        width: 100%;
-        left: -75px;
+    .hero__element {
+        width: 250px !important;
+        left: 18% !important;
     }
     .hero__head{
         font-size: 41px;

@@ -6,6 +6,18 @@
   }
 }
 
+.hero {
+  position: relative;
+  .hero__element {
+    width: 390px;
+    position: absolute;
+    left: 52.9%;
+    translate: -50%;
+    top: 30px;
+  }
+
+
+}
 
 
 .people__head {
