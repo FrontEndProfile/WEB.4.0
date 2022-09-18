@@ -12184,10 +12184,9 @@ a {
   height: 70px;
   width: 100%;
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   filter: drop-shadow(0px 25px 10px rgba(182, 224, 241, 0.203));
   rotate: -3deg;
-  translate: -5%;
   z-index: 0;
 }
 .hero .hero__divider {
@@ -12899,6 +12898,15 @@ footer .copyright__link li a span {
   line-height: 0.95;
   letter-spacing: -0.92px;
   color: #788bff;
+  position: relative;
+}
+.dropdown.mega .dropdown-menu .Learn-About-BitWebs::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 10px;
+  width: 168px;
+  border: solid 1px #fffbfa;
 }
 .dropdown.mega .dropdown-menu .Explore-BitWebs-arc {
   font-family: "FuturaPT-Light";
@@ -12945,20 +12953,36 @@ footer .copyright__link li a span {
   padding: 16px 0 16px 0;
   margin-right: 0 !important;
 }
+.navbar.bottom .dropdown-toggle.nav-link.bulid + .dropdown-menu {
+  translate: -47%;
+}
 .navbar.bottom .dropdown-toggle.nav-link.web {
   width: 215px;
   padding: 16px 0 16px 0;
   margin-right: 0 !important;
+}
+.navbar.bottom .dropdown-toggle.nav-link.web + .dropdown-menu {
+  translate: -20%;
 }
 .navbar.bottom .dropdown-toggle.nav-link.ecosystem {
   width: 158px;
   padding: 16px 0 16px 0;
   margin-right: 0 !important;
 }
+.navbar.bottom .dropdown-toggle.nav-link.ecosystem + .dropdown-menu {
+  translate: -58%;
+}
 .navbar.bottom .dropdown-toggle.nav-link.dao {
   width: 109px;
   padding: 16px 0 16px 0;
   margin-right: 0 !important;
+}
+.navbar.bottom .dropdown-toggle.nav-link.dao + .dropdown-menu {
+  translate: -76%;
+}
+
+.h__mega_card_tittle {
+  height: 40px !important;
 }
 
 @media (max-width: 1400px) {

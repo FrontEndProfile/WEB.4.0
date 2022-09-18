@@ -608,6 +608,18 @@ footer {
       line-height: 0.95;
       letter-spacing: -0.92px;
       color: #788bff;
+      position: relative;
+      &:hover {
+        
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 10px;
+          width: 168px;
+          border: solid 1px #fffbfa;
+      }
     }
     .Explore-BitWebs-arc {
       font-family: $FuturaPT-Light;
@@ -619,7 +631,7 @@ footer {
       letter-spacing: 0.82px;
       color: #788bff;
       width: 174px;
-
+      
     }
     .Oval {
       width: 38px;
@@ -657,23 +669,36 @@ footer {
       width: 135px;
       padding: 16px 0 16px 0;
       margin-right: 0 !important;
+      + .dropdown-menu{
+        translate: -47%;
+      }
   }
   .dropdown-toggle.nav-link.web {
       width: 215px;
       padding: 16px 0 16px 0;
       margin-right: 0 !important;
-
+      + .dropdown-menu{
+        translate: -20%;
+      }
   }
   .dropdown-toggle.nav-link.ecosystem {
     width: 158px;
     padding: 16px 0 16px 0;
     margin-right: 0 !important;
-
+    + .dropdown-menu{
+      translate: -58%;
+    }
   }
   .dropdown-toggle.nav-link.dao {
     width: 109px;
     padding: 16px 0 16px 0;
     margin-right: 0 !important;
-
+    + .dropdown-menu{
+      translate: -76%;
+    }
   }
+  
+}
+.h__mega_card_tittle {
+  height: 40px !important;
 }
